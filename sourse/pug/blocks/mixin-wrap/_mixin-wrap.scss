@@ -34,3 +34,43 @@
 	}
 }
 
+.radio-wrapper{
+	display: flex;
+	border-radius: 10px;
+	border: 2px solid #a7a7a7;
+	margin-bottom: rem(40);
+	.custom-input{
+		height: rem(90);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		@extend .mono;
+		font-size: rem(38);
+		flex-grow: 1;
+		padding: 0;
+		overflow: hidden;
+		margin: 0;
+		&:not(:last-child){
+			border-right: 2px solid #a7a7a7;
+		}
+		&__lab{
+			background-color: #fff;
+			// display: none;
+		}
+	}
+	.red-i:checked + .custom-input__lab{
+		background-color: #db1e32;
+	}
+	.orange-i:checked + .custom-input__lab{
+		background-color: #f0851c;
+	}
+	.lemon-i:checked + .custom-input__lab{
+		background-color: #d3f41d;
+	}
+	.grass-i:checked + .custom-input__lab{
+		background-color: #91be32;
+	}
+	.green-i:checked + .custom-input__lab{
+		background-color: #328945;
+	}
+}

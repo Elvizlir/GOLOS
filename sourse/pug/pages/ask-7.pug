@@ -1,0 +1,35 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+block variables
+	- let  mainPage= null
+block title
+	title Вопрос 7 из 7
+
+block pagecontent
+ 
+	//- +mob-mnu()
+	//- +header()
+	//- 	+top-line()
+	//- 	+top-nav()
+	+header-block()
+	.main-block.ask-block
+		.container
+			h1 Вопрос 7 из 7
+			p Вы порекомендуете нас друзьям?
+			+radio-block-2
+			p Сообщение лично владельцу компании Автопрокат 24 (по желанию) – доставим&nbsp;за&nbsp;1&nbsp;секунду.
+			+form-wrap
+				+input("Опишите проблемы","textarea")
+			p 
+				strong Нажмите кнопку ниже и получите 3 подарка за голосование.
+			//- +form-wrap
+			//- 	+input("Ваш ответ")
+			.btn.btn-primary(href="#" disabled) Далее
+				+icon("arrow")
+	//- +s-form()
+	//- +s-contact()
+	//- +footer()
+

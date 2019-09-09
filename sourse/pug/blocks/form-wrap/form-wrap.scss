@@ -1,4 +1,7 @@
 .form-wrap{
+	max-width: rem(630);
+	margin-left: auto;
+	margin-right: auto;
  	&__input-wrap{
 			@extend .form-group;
 			
@@ -95,13 +98,14 @@
 	&__lab{
 		left: 0;
 		display: block;
-		top: rem(3); 
-		width: rem(20px);
-		height: rem(20px);
+		top: 0; 
+		width: 100%;
+		z-index: -1;
+		border-radius: 0;
+		height: 100%;
 		background-color: $primary;
 		@include mt;
 		position: absolute; 
-		margin-right: 10px;
 		&::after{  
 			content: '';
 			position: absolute;
@@ -121,22 +125,19 @@
 	}
 
 	&__input[type="radio"] + &__lab{ 
-		border-radius: 50%;
-		&::after{ 
-			border-radius: 50%;
-		}
-	}
 
+	}
 	&__input:checked + &__lab{
-		background-color: $success;
 		 
 		&::after{
 	
 			opacity: 1;
 		}
 	}
+	
  
 }
+
 
 
 

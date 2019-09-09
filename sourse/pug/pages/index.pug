@@ -14,7 +14,17 @@ block pagecontent
 	//- +header()
 	//- 	+top-line()
 	//- 	+top-nav()
-	//- +header-block()
+	+header-block()
+	.main-block
+		.container
+			h1 Михаил Сергеевич!
+			p Как Вам наш Volkswagen Polo?
+			img(src="img/car.png" alt="#")
+			p Оцените по&nbsp;пятибальной шкале семь параметров&nbsp;прошедшего сотрудничества где&nbsp;5&nbsp;&mdash;&nbsp;это&nbsp;отлично, а&nbsp;1&nbsp;&mdash; отвратительно.
+			p
+				strong А&nbsp;за&nbsp;вашу минуту времени мы&nbsp;подарим вам 3&nbsp;подарка&nbsp;&mdash; они ждут вас сразу за&nbsp;7-&nbsp;м&nbsp;вопросом!
+			.btn.btn-primary(href="#") Начать
+				+icon("arrow")
 	//- +s-form()
 	//- +s-contact()
 	//- +footer()

@@ -162,3 +162,19 @@ mixin pic( i,exp="jpg", bg, lazy="lazy", media='576px')
 	or
 	+piclazy('consult','png')
 
+
+mixin radio-block
+	+form-wrap
+		.radio-wrapper
+			+in-c("radio","1","mark")(class="red-i")
+			+in-c("radio","2","mark")(class="orange-i")
+			+in-c("radio","3","mark")(class="lemon-i")
+			+in-c("radio","4","mark")(class="grass-i")
+			+in-c("radio","5","mark")(class="green-i")
+
+
+mixin radio-block-2
+	+form-wrap
+		.radio-wrapper
+			+in-c("radio","Да","mark")(class="green-i")
+			+in-c("radio","Нет","mark")(class="red-i")

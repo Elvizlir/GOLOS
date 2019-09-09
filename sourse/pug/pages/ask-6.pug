@@ -1,0 +1,30 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+block variables
+	- let  mainPage= null
+block title
+	title Вопрос 6 из 7
+
+block pagecontent
+ 
+	//- +mob-mnu()
+	//- +header()
+	//- 	+top-line()
+	//- 	+top-nav()
+	+header-block()
+	.main-block.ask-block
+		.container
+			h1 Вопрос 6 из 7
+			p Какую сумму вы оплатили при возврате нашему&nbsp;сотруднику? Если ничего – напишите&nbsp;«0».
+			+form-wrap
+				+input("Ваш ответ")
+			//- +radio-block
+			.btn.btn-primary(href="#" disabled) Далее
+				+icon("arrow")
+	//- +s-form()
+	//- +s-contact()
+	//- +footer()
+

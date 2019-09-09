@@ -1,0 +1,32 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+block variables
+	- let  mainPage= null
+block title
+	title Вопрос 1 из 7
+
+block pagecontent
+ 
+	//- +mob-mnu()
+	//- +header()
+	//- 	+top-line()
+	//- 	+top-nav()
+	+header-block()
+	.main-block.ask-block
+		.container
+			h1 Вопрос 1 из 7
+			p Оцените общее состояние авто:
+			+radio-block
+			p Опишите проблемы автомобиля, которые нужно немедленно устранить:
+
+			+form-wrap
+				+input("Опишите проблемы","textarea")
+			.btn.btn-primary(href="#" disabled) Далее
+				+icon("arrow")
+	//- +s-form()
+	//- +s-contact()
+	//- +footer()
+
