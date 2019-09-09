@@ -36,10 +36,9 @@
 
 .radio-wrapper{
 	display: flex;
-	border-radius: 10px;
-	border: 2px solid #a7a7a7;
 	margin-bottom: rem(40);
 	.custom-input{
+		border: 2px solid #a7a7a7;
 		height: rem(90);
 		display: flex;
 		align-items: center;
@@ -50,8 +49,14 @@
 		padding: 0;
 		overflow: hidden;
 		margin: 0;
-		&:not(:last-child){
-			border-right: 2px solid #a7a7a7;
+		&:first-child{
+			border-radius: 10px 0 0 10px;
+		}
+		&:last-child{
+			border-radius: 0 10px 10px 0;
+		}
+		&:not(:first-child){
+			margin-left: -2px;
 		}
 		&__lab{
 			background-color: #fff;
@@ -73,4 +78,8 @@
 	.green-i:checked + .custom-input__lab{
 		background-color: #328945;
 	}
+}
+
+.custom-input__input:checked ~ .custom-input__text{
+	color: #fff;
 }
