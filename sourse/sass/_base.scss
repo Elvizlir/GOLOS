@@ -568,3 +568,14 @@ a{
 		font-size: rem(21);
 	}
 }
+
+.map{
+	li{
+		margin-bottom: rem(20);
+	}
+	a{
+		cursor: pointer;
+		color: #000000;
+		text-decoration: underline;
+	}
+}

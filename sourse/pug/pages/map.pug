@@ -1,0 +1,41 @@
+extends layout/main.pug
+
+
+include ../blocks/s-content/_s-content.pug
+include ../blocks/s-contact/_s-contact.pug
+block variables
+	- let  mainPage= null
+block title
+	title title
+
+block pagecontent
+ 
+	//- +mob-mnu()
+	//- +header()
+	//- 	+top-line()
+	//- 	+top-nav()
+	+header-block()
+	.main-block
+		ul.map
+			li
+				a(href="index.html") Главная
+			li
+				a(href="ask-1.html") Вопрос 1
+			li
+				a(href="ask-2.html") Вопрос 2
+			li
+				a(href="ask-3.html") Вопрос 3
+			li
+				a(href="ask-4.html") Вопрос 4
+			li
+				a(href="ask-5.html") Вопрос 5
+			li
+				a(href="ask-6.html") Вопрос 6
+			li
+				a(href="ask-7.html") Вопрос 7
+			li
+				a(href="thanks.html") Спасибо
+	//- +s-form()
+	//- +s-contact()
+	//- +footer()
+
