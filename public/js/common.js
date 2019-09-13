@@ -8,6 +8,15 @@ jQuery(document).ready(function ($) {
     }
   })
 
+  $(document).on('change input cut copy paste', '.input-text--js', function () {
+
+		if ($(this).val() !== '') {
+			$('#btn').removeClass('disabled');
+		} else {
+			$('#btn').addClass('disabled');
+		}
+	})
+
 });
 
 // JSCCommon.LazyFunction();

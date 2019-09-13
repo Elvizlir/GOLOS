@@ -22,7 +22,10 @@ block pagecontent
 			+radio-block-2
 			p Сообщение лично владельцу компании Автопрокат 24 (по желанию) – доставим&nbsp;за&nbsp;1&nbsp;секунду.
 			+form-wrap
-				+input("Опишите проблемы","textarea")
+				+e.input-wrap
+					+e.TEXTAREA.input.form-control(placeholder="Опишите проблемы") Уважаемый Николай Петрович, 
+				//- +input("Опишите проблемы","textarea")
+				//- 	|Уважаемый Николай Петрович, 
 			p 
 				strong Нажмите кнопку ниже и получите 3 подарка за голосование.
 			//- +form-wrap

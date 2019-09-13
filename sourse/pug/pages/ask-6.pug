@@ -20,9 +20,9 @@ block pagecontent
 			h1 Вопрос 6 из 7
 			p Какую сумму вы оплатили при возврате нашему&nbsp;сотруднику? Если ничего – напишите&nbsp;«0».
 			+form-wrap
-				+input("Ваш ответ")
+				+input("Ваш ответ")(class="input-text--js" value="")
 			//- +radio-block
-			a.btn.btn-primary.disabled(href="ask-7.html" disabled) Далее
+			a.btn.btn-primary.disabled#btn(href="ask-7.html") Далее
 				+icon("arrow")
 	//- +s-form()
 	//- +s-contact()

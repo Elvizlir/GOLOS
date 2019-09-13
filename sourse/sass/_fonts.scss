@@ -1,5 +1,6 @@
 
 
 @include font-face ("Lato", "../fonts/Lato-Regular", $file-formats: woff2);
+@include font-face ("Arial", "../fonts/ArialMT", $file-formats: woff2);
 @include font-face ("Tahoma", "../fonts/Tahoma", $file-formats: woff2);
 @include font-face ("Tahoma", "../fonts/Tahoma-Bold", 700, $file-formats: woff2);
